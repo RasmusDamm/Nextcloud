@@ -1,3 +1,52 @@
+# Installationsguide til Nextcloud med Apache, PHP og MySQL
+
+Følg denne guide for at installere Nextcloud med Apache, PHP og MySQL i Ubuntu 26.02
+
+---
+
+## 1. Opdatér systemet
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+---
+
+## 2. Installér Apache, MariaDB og PHP
+
+```bash
+sudo apt install apache2 mariadb-server libapache2-mod-php php php-mysql php-xml php-mbstring php-curl php-zip php-gd php-intl php-bcmath unzip -y
+```
+
+---
+
+## 3. Download Nextcloud
+
+```bash
+cd /tmp 
+wget https://download.nextcloud.com/server/releases/latest.zip
+```
+
+---
+
+## 4. Installér og udpak ZIP-filen
+
+```bash
+sudo apt install unzip
+unzip latest.zip
+```
+
+---
+
+## 5. Flyt Nextcloud til webmappen
+
+```bash
+sudo mv nextcloud /var/www/
+```
+
+---
+
+
 Installation Guide for Nextcloud with Apache, PHP, and MySQL
 Follow this guide to install Nextcloud with Apache, PHP, and MySQL on Ubuntu 26.02
 
