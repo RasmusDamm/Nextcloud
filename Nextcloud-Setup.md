@@ -1,27 +1,3 @@
-# Installation Guide for Nextcloud with Apache, PHP, and MySQL
-Follow this guide to install Nextcloud with Apache, PHP, and MySQL on Ubuntu 26.02
----
-## 1. Update the system
-```bash
-sudo apt update && sudo apt upgrade -y
-2. Install Apache, MariaDB, and PHP```
-
-bash
-sudo apt install apache2 mariadb-server libapache2-mod-php php php-mysql php-xml php-mbstring php-curl php-zip php-gd php-intl php-bcmath unzip -y
-3. Download Nextcloud
-bash
-cd /tmp 
-wget https://download.nextcloud.com/server/releases/latest.zip
-4. Install and extract the ZIP file
-bash
-sudo apt install unzip
-unzip latest.zip
-5. Move Nextcloud to the web directory
-bash
-sudo mv nextcloud /var/www/
-
-
-
 Installation Guide for Nextcloud with Apache, PHP, and MySQL
 Follow this guide to install Nextcloud with Apache, PHP, and MySQL on Ubuntu 26.02
 
