@@ -3,6 +3,7 @@ Follow this guide to install Nextcloud with Apache, PHP, and MySQL on Ubuntu 26.
 
 
 1. Update the system
+
 ``bash
 sudo apt update && sudo apt upgrade -y``
 
